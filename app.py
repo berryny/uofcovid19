@@ -9,7 +9,7 @@ def flask_mongodb_atlas():
 
 @app.route("/test", methods=['POST', 'GET'])
 def test():
-    db.db.uofcc_users.insert_one({"name": "John"})
+    db.db.uofcc_users.insert_one({"name": "Judi"})
     return "Connected to the data base!"
 
 if __name__ == '__main__':

@@ -20,7 +20,13 @@ git push -u origin main
 
 # How-to Section
 
-### 
+### React Libraries 
+
+- [React Bootstrap](https://react-bootstrap.github.io/)
+- [React Router](https://reactrouter.com/web/guides/quick-start)
+
+### Resources
+
 [Learn](https://medium.com/@summerxialinqiao/connect-flask-app-to-mongodb-atlas-using-pymongo-328e119a7bd8) how to Connect Flask App to MongoDB Atlas Using Pymongo
 
 ### Python and Flask for Windows
