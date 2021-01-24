@@ -8,8 +8,8 @@ app = Flask(__name__)
 def flask_mongodb_atlas():
     return "flask mongodb atlas!"
 
-@app.route("/test", methods=['POST', 'GET'])
-def test():
+@app.route("/checkin", methods=['POST', 'GET'])
+def checkin():
     print('enter', request.form, request.args)
     data = request.form
     print('data', data)

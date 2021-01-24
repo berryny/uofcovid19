@@ -10,45 +10,35 @@ class Survey extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      task: "",
-      items: [],
+      fname: "",
+      lname: "",
     };
   }
   onChange = (event) => {
-    this.setState({
-      [event.target.name]: event.target.value,
-    });
+    let nam = event.target.name;
+    let val = event.target.value;
+    this.setState({ [nam]: val });
   };
 
   onSubmit = () => {
-    let { task } = this.state;
-    console.log("PRINTING task", this.state.task);
-    console.log('endpoint', endpoint);
-    if (task) {
-    axios
-      .post(
-        endpoint + "/test",
-        {
-          task,
-        },
-        {
-          headers: {
-            "Content-Type": "application/x-www-form-urlencoded",
+    let { fname, lname } = this.state;
+    console.log("PRINTING this", this.state);
+      axios
+        .post(
+          endpoint + "/checkin",
+          {
+            fname,
+            lname
           },
-        }
-      )
-      .then((res) => {
-        // this.getTask();
-        this.setState({
-          task: "",
+          {
+            headers: {
+              "Content-Type": "application/x-www-form-urlencoded",
+            },
+          }
+        )
+        .then((res) => {
+          console.log(res);
         });
-        console.log(res);
-      });
-    }
-    // const url = "/test";
-    // axios.post(url, task).then(({ data }) => {
-    //   console.log(data);
-    // });
   };
 
   render() {
@@ -61,8 +51,8 @@ class Survey extends Component {
             <Form.Control
               type="text"
               placeholder="First Name"
-              name="task"
-              value={this.state.task}
+              name="fname"
+              // value={this.state.fname}
               onChange={this.onChange}
             />
             <Form.Text className="text-muted">
@@ -75,7 +65,7 @@ class Survey extends Component {
             <Form.Control type="text"
               placeholder="Last Name"
               name="lname"
-              value={this.state.lname}
+              // value={this.state.lname}
               onChange={this.onChange} />
             <Form.Text className="text-muted">
               Enter your last name

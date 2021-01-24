@@ -30,6 +30,8 @@ git push -u origin main
 
 [Learn](https://medium.com/@summerxialinqiao/connect-flask-app-to-mongodb-atlas-using-pymongo-328e119a7bd8) how to Connect Flask App to MongoDB Atlas Using Pymongo
 
+[Learn](https://www.w3schools.com/react/react_forms.asp) Multiple Input Fields
+
 [Learn](https://levelup.gitconnected.com/build-a-todo-app-in-golang-mongodb-and-react-e1357b4690a6) Build a Todo App in Golang, MongoDB, and React
 
 ### Python and Flask for Windows
