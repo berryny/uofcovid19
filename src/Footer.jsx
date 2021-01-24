@@ -1,19 +1,17 @@
 import React from "react"
-import logo from './logo.svg';
+import logo from './universe_of_covid_consciousness_logo.png';
 
 import { Container, Row, Col } from "react-bootstrap"
 
 function Footer() {
   return (
     <div>
-      <footer className="footer bg-light py-5">
+      <footer className="footer bg-light py-5 mt-5">
         <Container className="text-center">
-          <Row>
+          <Row className="align-items-center">
             <Col md={2}><img
               src={logo}
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
+              className="img-fluid d-inline-block align-top"
               alt="Universe of Covid Consciousness logo"
             /></Col>
             <Col><ul class="list-inline">

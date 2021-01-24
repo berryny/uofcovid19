@@ -1,6 +1,6 @@
 import React from "react"
-import logo from './logo.svg';
-import { ListGroup, Navbar, Nav, Form, FormControl, Button } from "react-bootstrap"
+import logo from './universe_of_covid_consciousness_logo.png';
+import { ListGroup, Navbar, Nav, Button } from "react-bootstrap"
 
 function NavigationBar() {
   return (
@@ -8,8 +8,7 @@ function NavigationBar() {
       <Navbar bg="light justify-content-between" expand="lg">
         <Navbar.Brand href="/"><img
           src={logo}
-          width="30"
-          height="30"
+          width="100"
           className="d-inline-block align-top"
           alt="Universe of Covid Consciousness logo"
         /></Navbar.Brand>
@@ -19,8 +18,8 @@ function NavigationBar() {
             <Nav.Link href="/">Home</Nav.Link>
             {/* <Nav.Link href="/login">Login</Nav.Link> */}
             {/* <Nav.Link href="/register">Register</Nav.Link> */}
-            <Nav.Link href="/#">About</Nav.Link>
-            <Nav.Link href="/#">Contact</Nav.Link>
+            <Nav.Link href="/about">About</Nav.Link>
+            <Nav.Link href="/contact">Contact</Nav.Link>
             <Nav.Link href="/survey">Survey</Nav.Link>
           </Nav>
           <ListGroup horizontal className="bg-light">

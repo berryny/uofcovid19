@@ -9,6 +9,8 @@ import './index.css';
 import Landing from './Landing';
 import NavigationBar from './NavigationBar';
 import Footer from './Footer';
+import About from './About';
+import Contact from './About';
 import Survey from './Survey';
 
 ReactDOM.render(
@@ -18,6 +20,12 @@ ReactDOM.render(
       <Switch>
       <Route exact path="/">
           <Landing />
+        </Route>
+        <Route exact path="/about">
+          <About />
+        </Route>
+        <Route exact path="/contact">
+          <Contact />
         </Route>
         <Route exact path="/survey">
           <Survey />
