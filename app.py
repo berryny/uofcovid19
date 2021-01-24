@@ -15,7 +15,6 @@ def checkin():
     print('data', data)
     db.db.user_collection.insert_one({"survey": data})
     # db.db.user_collection.insert_one({"survey": "girl"})
-    return "Connected to the data base!"
 
 if __name__ == '__main__':
     app.run(port=5000)
