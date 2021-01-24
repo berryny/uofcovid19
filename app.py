@@ -11,7 +11,7 @@ def flask_mongodb_atlas():
 def test():
     r = request.args
     print('request:', r)
-    db.db.user_collection.insert_one({"survey": "girl"})
+    db.db.user_collection.insert_one({ "survey":r})
     return "Connected to the data base!"
 
 if __name__ == '__main__':
