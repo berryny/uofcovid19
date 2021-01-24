@@ -24,7 +24,7 @@ class Survey extends Component {
     let { task } = this.state;
     console.log("PRINTING task", this.state.task);
     console.log('endpoint', endpoint);
-    // if (task) {
+    if (task) {
     axios
       .post(
         endpoint + "/test",
@@ -44,14 +44,18 @@ class Survey extends Component {
         });
         console.log(res);
       });
-    // }
+    }
+    // const url = "/test";
+    // axios.post(url, task).then(({ data }) => {
+    //   console.log(data);
+    // });
   };
 
   render() {
     return (
       <div id="survey"><Container>
         {/* <Form action="/test" method="POST"> */}
-        <Form onSubmit={this.onSubmit} method="POST">
+        <Form onSubmit={this.onSubmit}>
           <Form.Group controlId="formBasicFirstName">
             <Form.Label>First Name</Form.Label>
             <Form.Control
@@ -67,7 +71,7 @@ class Survey extends Component {
           </Form.Group>
 
           <Form.Group controlId="formBasicLastName">
-            <Form.Label>List Name</Form.Label>
+            <Form.Label>Last Name</Form.Label>
             <Form.Control type="text"
               placeholder="Last Name"
               name="lname"
