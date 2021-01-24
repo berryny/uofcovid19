@@ -23,9 +23,7 @@ ReactDOM.render(
           <Survey />
         </Route>
       </Switch>
-      <Container>
         <Footer />
-      </Container>
     </Router>
   </div>
   ,

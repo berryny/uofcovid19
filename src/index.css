@@ -38,6 +38,9 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+.copy {
+  font-size: 1em;
+}
 
 /* Responsive Style */
 @media only screen and (max-width: 600px) {

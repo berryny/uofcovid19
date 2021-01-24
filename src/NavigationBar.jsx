@@ -11,7 +11,7 @@ function NavigationBar() {
           width="30"
           height="30"
           className="d-inline-block align-top"
-          alt="React Bootstrap logo"
+          alt="Universe of Covid Consciousness logo"
         /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
