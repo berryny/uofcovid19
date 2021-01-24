@@ -18,6 +18,22 @@ git branch -M main
 git push -u origin main
 ```
 
+# How-to Section
+
+### 
+[Learn](https://medium.com/@summerxialinqiao/connect-flask-app-to-mongodb-atlas-using-pymongo-328e119a7bd8) how to Connect Flask App to MongoDB Atlas Using Pymongo
+
+### Python and Flask for Windows
+
+Learn how to [setup](https://flask.palletsprojects.com/en/1.1.x/installation/) virtual environment for Windows
+
+Install [Flask](https://flask.palletsprojects.com/en/1.1.x/installation/#install-flask)
+
+Install [Flask-PyMongo](https://flask-pymongo.readthedocs.io/en/latest/#flask-pymongo)
+```
+pip install Flask-PyMongo
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
