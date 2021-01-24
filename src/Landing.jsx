@@ -15,11 +15,11 @@ function Landing() {
 
       {/* how it works */}
       <Container fluid className="text-dark">
-        <div className="text-center mt-5">
+        <div className="text-center my-5">
           <h2 class="display-5">How it Works</h2>
           <h3>It's the universe of COVID</h3>
         </div>
-        <Container fluid className="text-dark mt-5">
+        <Container fluid className="text-dark my-5">
           <Row>
             <Col md={3}>
               <p><i class="fas fa-plus-circle fa-4x"></i></p>
@@ -51,6 +51,37 @@ function Landing() {
         <p><Button variant="info" href="/login" className="fs-3">Download the app</Button></p>
       </Container>
 
+      {/* You're in good company */}
+      <Container fluid className="bg-light py-5">
+        <Container>
+          <Row>
+            <Col md={6}>
+              <h4>You're in good company</h4>
+              <p>View the top ten photo entries for our <strong>#quarantinewithme</strong> challenge! This weeks theme is <strong>"Mask Up in Style"</strong></p>
+              <Container fluid>
+                <Row>
+                  <Col>1 of 3</Col>
+                  <Col>2 of 3</Col>
+                  <Col>3 of 3</Col>
+                </Row>
+              </Container>
+            </Col>
+            <Col md={6}>
+              <Card className="border-0">
+                <Card.Img variant="top" src="holder.js/100px180" />
+                <Card.Body>
+                  <Card.Title>Card Title</Card.Title>
+                  <Card.Text>
+                    Some quick example text to build on the card title and make up the bulk of
+                    the card's content.
+    </Card.Text>
+                  <Button variant="primary">Go somewhere</Button>
+                </Card.Body>
+              </Card>
+            </Col>
+          </Row>
+        </Container>
+      </Container>
     </div >
   )
 }
