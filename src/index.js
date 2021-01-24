@@ -8,6 +8,7 @@ import './index.css';
 
 import NavigationBar from './NavigationBar';
 import Survey from './Survey';
+import CheckIn from './CheckIn';
 
 ReactDOM.render(
   <div>
@@ -16,6 +17,9 @@ ReactDOM.render(
         <Switch>
           <Route exact path="/survey">
             <Survey />
+          </Route>
+          <Route exact path="/checkin">
+            <CheckIn />
           </Route>
         </Switch>
     </Router>
