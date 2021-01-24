@@ -6,21 +6,27 @@ import { Container } from "react-bootstrap"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 
+import Landing from './Landing';
 import NavigationBar from './NavigationBar';
+import Footer from './Footer';
 import Survey from './Survey';
 
 ReactDOM.render(
   <div>
-    <Container>
     <Router>
-        <NavigationBar />
-        <Switch>
-          <Route exact path="/survey">
-            <Survey />
-          </Route>
-        </Switch>
+      <NavigationBar />
+      <Switch>
+      <Route exact path="/">
+          <Landing />
+        </Route>
+        <Route exact path="/survey">
+          <Survey />
+        </Route>
+      </Switch>
+      <Container>
+        <Footer />
+      </Container>
     </Router>
-    </Container>
   </div>
   ,
   document.getElementById('root')
