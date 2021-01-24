@@ -22,8 +22,8 @@ function NavigationBar() {
             <Nav.Link href="/survey">Survey</Nav.Link>
           </Nav>
           <ListGroup horizontal className="bg-light">
-            <ListGroup.Item className="p-0"><Button variant="outline-danger" href="/login">Login</Button></ListGroup.Item>
-            <ListGroup.Item className="p-0"><Button variant="danger" href="/register">Register</Button></ListGroup.Item>
+            <ListGroup.Item className="p-0 mr-3"><Button variant="outline-danger" href="/login">Login</Button></ListGroup.Item>
+            <ListGroup.Item className="p-0 mr-3"><Button variant="danger" href="/register">Register</Button></ListGroup.Item>
           </ListGroup>
 
         </Navbar.Collapse>

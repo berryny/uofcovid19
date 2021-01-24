@@ -59,11 +59,11 @@ function Landing() {
         <h1 class="display-5">The largest community of photo enthusiasts</h1>
         <ListGroup horizontal className="text-center mx-auto">
           <ListGroup.Item className="p-0 bg-transparent border-0">
-            <a href="#"><img className="img-fluid"
+            <a href="/#"><img className="img-fluid"
               src={appleStore}
               alt="placholder 1" /></a></ListGroup.Item>
           <ListGroup.Item className="p-0 bg-transparent border-0">
-            <a href="#"><img className="img-fluid"
+            <a href="/#"><img className="img-fluid"
               src={googlePlay}
               alt="placholder 1" /></a></ListGroup.Item>
         </ListGroup>
@@ -96,7 +96,7 @@ function Landing() {
                 <Card.Body>
                   <Card.Title>Quarantine Photo Challenge</Card.Title>
                   <Card.Text>The top 5 users who post pictures and receive the highest number of likes over a 7-day period will be featured on the UofCC instagram page. Make sure to submit photographs with your IG handle that you want tagged. One upload per day maximum. Must be 13 years of age or older to enter.</Card.Text>
-                  <Button variant="primary">Join the Community</Button>
+                  <Button variant="primary" href="/login">Join the Community</Button>
                 </Card.Body>
               </Card>
             </Col>
