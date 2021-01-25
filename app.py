@@ -9,10 +9,10 @@ def index():
     # create an alias
     return app.send_static_file('index.html')
 
-# @app.route('/about')
-# def about():
-#     # create an alias
-#     return app.send_static_file('index.html')
+@app.route('/about')
+def about():
+    # create an alias
+    return app.send_static_file('index.html')
 
 # To get the application deployed add /api/ to differentiate betwen the front-end and back-end URL structure
 # the /api will act as a namespace to separate what are the front-end and back-end routes
