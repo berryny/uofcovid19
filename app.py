@@ -2,10 +2,15 @@ import db
 from flask import Flask, request, jsonify
 import requests
 
-app = Flask(__name__)
-# app = Flask(__name__, static_folder="./build", static_url_path='/')
-# @app.route('/')
-# def index():
+app = Flask(__name__, static_folder="./build", static_url_path='/')
+
+@app.route('/')
+def index():
+    # create an alias
+    return app.send_static_file('index.html')
+
+# @app.route('/about')
+# def about():
 #     # create an alias
 #     return app.send_static_file('index.html')
 
