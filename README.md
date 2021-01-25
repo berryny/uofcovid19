@@ -39,6 +39,8 @@ git push -u origin main
 
 [Learn/Watch](https://www.youtube.com/watch?v=XL9cNMMJf7A) Working with Config Vars on Heroku
 
+- Installing packages using pip and virtual environments [read](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/)
+
 ### Python and Flask for Windows
 
 Learn how to [setup](https://flask.palletsprojects.com/en/1.1.x/installation/) virtual environment for Windows
