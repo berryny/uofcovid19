@@ -36,6 +36,8 @@ git push -u origin main
 
 [Learn](https://www.digitalocean.com/community/tutorials/react-axios-react) How To Use Axios with React
 
+[Learn/Watch](https://youtu.be/qEfduVAQ8FQ) Deploy a React + Flask Project to Production
+
 ### Python and Flask for Windows
 
 Learn how to [setup](https://flask.palletsprojects.com/en/1.1.x/installation/) virtual environment for Windows
