@@ -8,7 +8,9 @@ app = Flask(__name__, static_folder='../build', static_url_path='/')
 def flask_mongodb_atlas():
     return app.send_static_file('index.html')
 
-@app.route("/checkin", methods=['POST', 'GET'])
+# To get the application deployed add /api/ to differentiate betwen the front-end and back-end URL structure
+# the /api will act as a namespace to separate what are the front-end and back-end routes
+@app.route("/api/checkin", methods=['POST', 'GET'])
 def checkin():
     print('enter', request.form, request.args)
     data = request.form

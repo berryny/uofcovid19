@@ -25,7 +25,7 @@ class Survey extends Component {
     console.log("PRINTING this", this.state);
       axios
         .post(
-          endpoint + "/checkin",
+          endpoint + "/api/checkin",
           {
             fname,
             lname
