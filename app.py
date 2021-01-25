@@ -2,10 +2,11 @@ import db
 from flask import Flask, request, jsonify
 import requests
 
-app = Flask(__name__, static_folder='../build', static_url_path='/')
+app = Flask(__name__, static_folder="../build", static_url_path='/')
 
 @app.route('/')
-def flask_mongodb_atlas():
+def index():
+    # create an alias
     return app.send_static_file('index.html')
 
 # To get the application deployed add /api/ to differentiate betwen the front-end and back-end URL structure
