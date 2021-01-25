@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Container } from "react-bootstrap"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
@@ -12,6 +11,7 @@ import Footer from './Footer';
 import About from './About';
 import Contact from './About';
 import Survey from './Survey';
+import Profile from './Profile';
 
 ReactDOM.render(
   <div>
@@ -29,6 +29,9 @@ ReactDOM.render(
         </Route>
         <Route exact path="/survey">
           <Survey />
+        </Route>
+        <Route exact path="/profile">
+          <Profile />
         </Route>
       </Switch>
         <Footer />

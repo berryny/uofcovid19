@@ -15,9 +15,9 @@ function Footer() {
               alt="Universe of Covid Consciousness logo"
             /></Col>
             <Col><ul class="list-inline">
-              <li class="list-inline-item"><a href="#">Download App</a></li>
-              <li class="list-inline-item"><a href="#">Community</a></li>
-              <li class="list-inline-item"><a href="#">Contact Us</a></li>
+              <li class="list-inline-item"><a href="/#">Download App</a></li>
+              <li class="list-inline-item"><a href="/#">Community</a></li>
+              <li class="list-inline-item"><a href="/#">Contact Us</a></li>
             </ul></Col>
             <Col>
             <p className="copy">Universe of Covid Consciousness <br/>&copy;2021 We love our users!</p>
