@@ -1,12 +1,12 @@
 import React from "react"
 
-import { Container, Row, Col } from "react-bootstrap"
+import { Container } from "react-bootstrap"
 
 function Contact() {
   return (
     <div>
       <Container fluid className="secondary-banner text-center text-white">
-        <h1>Contact</h1>
+        <h1>Contact Page</h1>
       </Container>
     </div>
   )
