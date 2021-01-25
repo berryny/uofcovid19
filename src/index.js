@@ -9,7 +9,7 @@ import Landing from './Landing';
 import NavigationBar from './NavigationBar';
 import Footer from './Footer';
 import About from './About';
-import Contact from './About';
+import Contact from './Contact';
 import Survey from './Survey';
 import Profile from './Profile';
 
