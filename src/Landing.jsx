@@ -14,7 +14,7 @@ function Landing() {
       <Container fluid className="d-flex flex-column text-white justify-content-center callout-jumbotron home-jumbotron">
         <h1 class="display-3">I take COVID seriously!</h1>
         <h2 class="display-5 mt-3">I vow to do my part to <span className="text-warning fw-bold">#StoptheSpread19</span></h2>
-        <p><Button variant="info" href="/login" className="fs-3">Join Today</Button></p>
+        <p><Button variant="danger" href="/login" className="fs-3">Join Today</Button></p>
       </Container>
 
       {/* how it works */}
@@ -61,11 +61,11 @@ function Landing() {
           <ListGroup.Item className="p-0 bg-transparent border-0">
             <a href="/#"><img className="img-fluid"
               src={appleStore}
-              alt="placholder 1" /></a></ListGroup.Item>
+              alt="placeholder 1" /></a></ListGroup.Item>
           <ListGroup.Item className="p-0 bg-transparent border-0">
             <a href="/#"><img className="img-fluid"
               src={googlePlay}
-              alt="placholder 1" /></a></ListGroup.Item>
+              alt="placeholder 1" /></a></ListGroup.Item>
         </ListGroup>
       </Container>
 
@@ -80,13 +80,13 @@ function Landing() {
                 <Row>
                   <Col><img className="img-fluid"
                     src={img1}
-                    alt="placholder 1" /></Col>
+                    alt="placeholder 1" /></Col>
                   <Col><img className="img-fluid"
                     src={img1}
-                    alt="placholder 2" /></Col>
+                    alt="placeholder 2" /></Col>
                   <Col><img className="img-fluid"
                     src={img1}
-                    alt="placholder 3" /></Col>
+                    alt="placeholder 3" /></Col>
                 </Row>
               </Container>
             </Col>
@@ -96,7 +96,7 @@ function Landing() {
                 <Card.Body>
                   <Card.Title>Quarantine Photo Challenge</Card.Title>
                   <Card.Text>The top 5 users who post pictures and receive the highest number of likes over a 7-day period will be featured on the UofCC instagram page. Make sure to submit photographs with your IG handle that you want tagged. One upload per day maximum. Must be 13 years of age or older to enter.</Card.Text>
-                  <Button variant="primary" href="/login">Join the Community</Button>
+                  <Button variant="danger" href="/login">Join the Community</Button>
                 </Card.Body>
               </Card>
             </Col>
