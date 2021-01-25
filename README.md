@@ -37,6 +37,8 @@ git push -u origin main
 
 [Learn/Watch](https://youtu.be/qEfduVAQ8FQ) Deploy a React + Flask Project to Production
 
+[Learn/Watch](https://www.youtube.com/watch?v=XL9cNMMJf7A) Working with Config Vars on Heroku
+
 ### Python and Flask for Windows
 
 Learn how to [setup](https://flask.palletsprojects.com/en/1.1.x/installation/) virtual environment for Windows
