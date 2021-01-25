@@ -1,6 +1,6 @@
 import db
 from flask import Flask, request, jsonify
-import requests, os
+import requests
 
 app = Flask(__name__, static_folder="./build", static_url_path='/')
 
@@ -24,9 +24,7 @@ def survey():
 # the /api will act as a namespace to separate what are the front-end and back-end routes
 @app.route("/api/checkin", methods=['POST', 'GET'])
 def checkin():
-    print('enter', request.form, request.args)
     data = request.form
-    print('data', data)
     db.db.user_collection.insert_one({"survey": data})
     # db.db.user_collection.insert_one({"survey": "girl"})
 

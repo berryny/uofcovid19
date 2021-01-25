@@ -1,6 +1,7 @@
 .vs
 .vscode
 __pycache__
+.eslintcache
 /venv
 /env
 .env
