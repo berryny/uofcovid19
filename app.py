@@ -1,6 +1,6 @@
 import db
 from flask import Flask, request, jsonify
-import requests
+import requests, os
 
 app = Flask(__name__, static_folder="./build", static_url_path='/')
 
