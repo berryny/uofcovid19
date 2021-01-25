@@ -1,6 +1,10 @@
 {
     "root": "build/",
     "routes": {
-      "/**": "index.html"
+        "/**": "index.html",
+        "/about/**": "index.html",
+        "/survey/**": "index.html",
+        "/profile/**": "index.html",
+        "/contact/**": "index.html"
     }
   }
