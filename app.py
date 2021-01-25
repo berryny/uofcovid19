@@ -7,10 +7,14 @@ app = Flask(__name__, static_folder="./build", static_url_path='/')
 # create the same react router path in switch/route
 @app.route('/')
 @app.route('/about')
-@app.route('/survey')
 @app.route('/profile')
 @app.route('/contact')
 def index():
+    # create an alias
+    return app.send_static_file('index.html')
+
+@app.route('/survey')
+def survey():
     # create an alias
     return app.send_static_file('index.html')
 
