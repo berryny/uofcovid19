@@ -8,6 +8,8 @@ app = Flask(__name__, static_folder="./build", static_url_path='/')
 @app.route('/')
 @app.route('/about')
 @app.route('/profile')
+@app.route('/login')
+@app.route('/register')
 @app.route('/contact')
 def index():
     # create an alias

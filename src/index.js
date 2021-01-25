@@ -10,6 +10,8 @@ import NavigationBar from './NavigationBar';
 import Footer from './Footer';
 import About from './About';
 import Contact from './Contact';
+import Login from './Login';
+import RegAccount from './RegAccount';
 import Survey from './Survey';
 import Profile from './Profile';
 
@@ -23,6 +25,12 @@ ReactDOM.render(
         </Route>
         <Route exact path="/about">
           <About />
+        </Route>
+        <Route exact path="/login">
+          <Login />
+        </Route>
+        <Route exact path="/register">
+          <RegAccount />
         </Route>
         <Route exact path="/contact">
           <Contact />
