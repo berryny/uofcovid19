@@ -1,4 +1,29 @@
-# Project
+# #UofCC A Covid Consciousness App
+
+## Project
+
+We created an app to engage young people to take COVID seriously. We wanted to think beyond public-health messaging while targeting the youth population separately for effective messaging.
+
+### Inspiration
+
+The United States falls behind almost every country in our ability to stop the spread of COVID. We wanted to find a way to make people take COVID precautions seriously and challenge them to think about how their actions might affect the community. We decided to target a specific age group in order to make the concept and messaging successful, trying to effectively reach a portion of the population rather than ineffectively reaching everybody. As a result, we decided to turn our attention towards informing young people - mainly 15 to 25 year olds - about behaviors that are appropriate in the upcoming months as their elders are receiving vaccinations and they are not. This time in their lives will be incredibly important to sustain their health and keep many young people from developing long term symptoms or even dying.
+
+Problem: 
+
+We must think beyond public-health messaging to invigorate the public to take COVID seriously -We must target specific populations separately for messaging to be effective 
+
+Solution: 
+
+- Create a platform to access COVID information and analyze personal safety precautions 
+- Connect to youth population with age appropriate incentives like being tagged on social media and the opportunity to share daily events
+
+### What it does
+
+Connects the youth population to a platform where they can analyze their safety precautions and share adherence to guidelines with age appropriate incentives like being tagged on social media and the opportunity to share daily events.
+
+[read more](https://devpost.com/software/uofcc-the-universe-of-covid-consciousness-app)
+
+## Repo
 
 - …or create a new repository on the command line
 ```
@@ -17,7 +42,7 @@ git branch -M main
 git push -u origin main
 ```
 
-# How-to Section
+## How-to Section
 
 ### React Libraries 
 
@@ -25,6 +50,53 @@ git push -u origin main
 - [React Router](https://reactrouter.com/web/guides/quick-start)
 - [axios](https://www.axios.com/)
 
+### Project Setup
+
+The below commands are based on Windows 10. Mac user, if `ERR` appears during installation, you may need to use `sudo` before each command line
+
+- Command Line to check if Node.js is installed `node -v`. 
+    - If it returns a version greater then `v14.15.4` then you're good!
+    - If no version is returned, [install](https://nodejs.org/en/download/) Node.js
+- Create React project using the command line `npx create-react-app PROJECT_NAME`
+    - Go to project directory `cd PROJECT_NAME`
+    - type `code .` to open [VSCode](https://code.visualstudio.com/)
+- Create a backend folder 
+```
+mkdir backend
+cd backend
+```
+- Install MERN packages
+```
+npm install express cors mongoose dotenv
+```
+    - [Mongoose ](https://mongoosejs.com/docs/) elegant mongodb object modeling for node.js
+- Install [Nodemon](https://nodemon.io/) is a utility depended on by over 1.5 million projects, that will monitor for any changes in your source and automatically restart your server. Perfect for development.
+```
+npm install -g nodemon
+```
+- Create file /backend/`server.js`
+```
+const express = require('express');
+const cors = require('cors');
+const mongoose = require('mongoose');
+
+require('dotenv').config();
+
+const app = express();
+const port = process.env.PORT || 5000;
+
+app.use(cors());
+app.use(express.json());
+
+app.listen(port, () => {
+    console.log(`Server is running on port: ${port}`);
+});
+```
+    - Execute file `nodemon server`
+    - Create a /backend/`.env`
+        - Add environmental variable `ATLAS_URI = <mongodb_connection>` from Mongodb Atlas Connect for Node.js
+    
+    
 ### Resources
 
 [Learn](https://medium.com/@summerxialinqiao/connect-flask-app-to-mongodb-atlas-using-pymongo-328e119a7bd8) how to Connect Flask App to MongoDB Atlas Using Pymongo
@@ -41,6 +113,9 @@ git push -u origin main
 
 - Installing packages using pip and virtual environments [read](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/)
 
+- [Learn/Watch](https://www.youtube.com/watch?v=7CqJlxBYj-M) Learn the `MERN` Stack - Full Tutorial (MongoDB, Express, React, Node.js)
+    - MEAN is a free and open-source JavaScript software stack for building dynamic web sites and web applications. It's a a Javascript Stack that is used for easier and faster deployment of full-stack web applications.
+
 ### Python and Flask for Windows
 
 Learn how to [setup](https://flask.palletsprojects.com/en/1.1.x/installation/) virtual environment for Windows
@@ -51,6 +126,12 @@ Install [Flask-PyMongo](https://flask-pymongo.readthedocs.io/en/latest/#flask-py
 ```
 pip install Flask-PyMongo
 ```
+
+### Fix Files to Repository
+
+- This command will unstage and remove paths from the git index `git rm -r --cached .`
+- This command will add all of your files back since `.gitignore` will have the rules `git add .`
+- This command will commit all files `git commit -m ".gitignore is now working"`
 
 # Getting Started with Create React App
 
