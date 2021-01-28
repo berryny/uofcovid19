@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
+// urlapp = 'http://localhost:5000'
+urlapp = 'https://uofccbackend.herokuapp.com/'
+
 export default class CreateUser extends Component {
     constructor(props) {
         super(props);
@@ -28,7 +31,7 @@ export default class CreateUser extends Component {
 
         console.log(user);
 
-        axios.post('./users/add', user)
+        axios.post(urlapp+'/users/add', user)
             .then(res => console.log(res.data));
 
         this.setState({

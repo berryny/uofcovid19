@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { Container, Table } from "react-bootstrap"
 
+
+// urlapp = 'http://localhost:5000'
+urlapp = 'https://uofccbackend.herokuapp.com/'
+
 const Exercise = props => (
   <tr>
     <td>{props.exercise.username}</td>
@@ -25,7 +29,7 @@ export default class ExercisesList extends Component {
   }
 
   componentDidMount() {
-    axios.get('https://uofcc.herokuapp.com/exercises/')
+    axios.get(urlapp+'/exercises/')
       .then(response => {
         this.setState({ exercises: response.data })
       })
@@ -35,7 +39,7 @@ export default class ExercisesList extends Component {
   }
 
   deleteExercise(id) {
-    axios.delete('https://uofcc.herokuapp.com/exercises/' + id)
+    axios.delete(urlapp+'/exercises/' + id)
       .then(response => { console.log(response.data) });
 
     this.setState({
@@ -56,20 +60,20 @@ export default class ExercisesList extends Component {
           <h1>Logged Exercises</h1>
         </Container>
         <Container>
-          <Table responsive="lg" bordered>
-            <thead className="thead-light">
-              <tr>
-                <th>Username</th>
-                <th>Description</th>
-                <th>Duration</th>
-                <th>Date</th>
-                <th>Actions</th>
-              </tr>
-            </thead>
-            <tbody>
-              {this.exerciseList()}
-            </tbody>
-          </Table>
+        <Table  responsive="lg" bordered>
+          <thead className="thead-light">
+            <tr>
+              <th>Username</th>
+              <th>Description</th>
+              <th>Duration</th>
+              <th>Date</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            {this.exerciseList()}
+          </tbody>
+        </Table>
         </Container>
       </div>
     )

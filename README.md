@@ -44,6 +44,32 @@ git branch -M main
 git push -u origin main
 ```
 
+
+```
+[
+  {
+    "_id": "60121fbcb7eac5111c0ca652",
+    "username": "Bobby",
+    "description": "run, snowboard",
+    "duration": 60,
+    "date": "2021-04-27T01:34:49.167Z",
+    "createdAt": "2021-01-28T02:21:48.435Z",
+    "updatedAt": "2021-01-28T06:28:45.771Z",
+    "__v": 0
+  },
+  {
+    "_id": "60121fe0b7eac5111c0ca653",
+    "username": "Gini",
+    "description": "bike ride",
+    "duration": 30,
+    "date": "2021-01-27T01:34:49.167Z",
+    "createdAt": "2021-01-28T02:22:24.366Z",
+    "updatedAt": "2021-01-28T02:22:24.366Z",
+    "__v": 0
+  }
+]
+```
+
 ## How-to Section
 
 ### React Libraries 

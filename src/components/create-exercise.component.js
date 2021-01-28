@@ -3,6 +3,9 @@ import axios from 'axios';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 
+// urlapp = 'http://localhost:5000'
+urlapp = 'https://uofccbackend.herokuapp.com/'
+
 export default class CreateExercise extends Component {
     constructor(props) {
         super(props);
@@ -23,7 +26,7 @@ export default class CreateExercise extends Component {
     }
 
     componentDidMount() {
-        axios.get('https://uofcc.herokuapp.com/users/')
+        axios.get(urlapp + '/users/')
             .then(response => {
                 if (response.data.length > 0) {
                     this.setState({
@@ -74,7 +77,7 @@ export default class CreateExercise extends Component {
 
         console.log(exercise);
 
-        axios.post('https://uofcc.herokuapp.com/exercises/add', exercise)
+        axios.post(urlapp+'/exercises/add', exercise)
             .then(res => console.log(res.data));
 
         window.location = '/';
