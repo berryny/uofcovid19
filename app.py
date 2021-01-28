@@ -11,6 +11,8 @@ app = Flask(__name__, static_folder="./build", static_url_path='/')
 @app.route('/login')
 @app.route('/register')
 @app.route('/contact')
+@app.route('/exercise-tracker')
+@app.route('/user')
 def index():
     # create an alias
     return app.send_static_file('index.html')
