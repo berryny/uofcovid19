@@ -127,13 +127,14 @@ app.listen(port, () => {
 
 - [Download](https://insomnia.rest/) Insomnia - Leading Open Source API Client, and Collaborative API Design Platform for GraphQL, and REST.
 
-### Extras
+### Nice to Have
 
-- [cool-ascii-faces](https://www.npmjs.com/package/cool-ascii-faces) get some cool ascii faces
+- Install [cool-ascii-faces](https://www.npmjs.com/package/cool-ascii-faces) get some cool ascii faces
 ```
 npm install cool-ascii-faces -g
 cool-face [-a | --all]
 ```
+    - [Resource](https://devcenter.heroku.com/articles/getting-started-with-nodejs#push-local-changes)
 
 
 
