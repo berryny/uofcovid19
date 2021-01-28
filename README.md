@@ -127,6 +127,15 @@ app.listen(port, () => {
 
 - [Download](https://insomnia.rest/) Insomnia - Leading Open Source API Client, and Collaborative API Design Platform for GraphQL, and REST.
 
+### Extras
+
+- [cool-ascii-faces](https://www.npmjs.com/package/cool-ascii-faces) get some cool ascii faces
+```
+npm install cool-ascii-faces -g
+cool-face [-a | --all]
+```
+
+
 
 ### Python and Flask for Windows
 
