@@ -25,7 +25,7 @@ export default class ExercisesList extends Component {
   }
 
   componentDidMount() {
-    axios.get('./exercises/')
+    axios.get('https://uofcc.herokuapp.com/exercises/')
       .then(response => {
         this.setState({ exercises: response.data })
       })
@@ -35,7 +35,7 @@ export default class ExercisesList extends Component {
   }
 
   deleteExercise(id) {
-    axios.delete('./exercises/' + id)
+    axios.delete('https://uofcc.herokuapp.com/exercises/' + id)
       .then(response => { console.log(response.data) });
 
     this.setState({

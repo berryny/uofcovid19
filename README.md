@@ -1,5 +1,7 @@
 # #UofCC A Covid Consciousness App
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9e00bc23-3e00-4fde-89b4-90a4f80f6f8f/deploy-status)](https://app.netlify.com/sites/uofcc/deploys)
+
 ## Project
 
 We created an app to engage young people to take COVID seriously. We wanted to think beyond public-health messaging while targeting the youth population separately for effective messaging.
