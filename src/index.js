@@ -21,13 +21,6 @@ import EditExercise from './components/edit-exercise.component';
 import CreateExercise from './components/create-exercise.component';
 import CreateUser from './components/create-user.component';
 
-if (process.env.NODE_ENV === "production"){
-  app.use(express.static("build"));
-  app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname,  "build", "index.html"));
-  });
-}
-
 ReactDOM.render(
   <div>
     <Router>
