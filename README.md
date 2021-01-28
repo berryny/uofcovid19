@@ -44,32 +44,6 @@ git branch -M main
 git push -u origin main
 ```
 
-
-```
-[
-  {
-    "_id": "60121fbcb7eac5111c0ca652",
-    "username": "Bobby",
-    "description": "run, snowboard",
-    "duration": 60,
-    "date": "2021-04-27T01:34:49.167Z",
-    "createdAt": "2021-01-28T02:21:48.435Z",
-    "updatedAt": "2021-01-28T06:28:45.771Z",
-    "__v": 0
-  },
-  {
-    "_id": "60121fe0b7eac5111c0ca653",
-    "username": "Gini",
-    "description": "bike ride",
-    "duration": 30,
-    "date": "2021-01-27T01:34:49.167Z",
-    "createdAt": "2021-01-28T02:22:24.366Z",
-    "updatedAt": "2021-01-28T02:22:24.366Z",
-    "__v": 0
-  }
-]
-```
-
 ## How-to Section
 
 ### React Libraries 
@@ -100,40 +74,7 @@ The below commands are based on Windows 10. Mac user, if `ERR` appears during in
 mkdir backend
 cd backend
 ```
-- Install MERN packages
-```
-npm install express cors mongoose dotenv
-```
-    - [express.js](https://expressjs.com/) is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
-    - [CORS](https://expressjs.com/en/resources/middleware/cors.html) is a node.js package for providing a Connect/Express middleware that can be used to enable CORS with various options. 
-    - [Mongoose ](https://mongoosejs.com/docs/) elegant mongodb object modeling for node.js
-- Install [Nodemon](https://nodemon.io/) is a utility depended on by over 1.5 million projects, that will monitor for any changes in your source and automatically restart your server. Perfect for development.
-```
-npm install -g nodemon
-```
-- Create file /backend/`server.js`
-```
-const express = require('express');
-const cors = require('cors');
-const mongoose = require('mongoose');
 
-require('dotenv').config();
-
-const app = express();
-const port = process.env.PORT || 5000;
-
-app.use(cors());
-app.use(express.json());
-
-app.listen(port, () => {
-    console.log(`Server is running on port: ${port}`);
-});
-```
-    - Execute file `nodemon server`
-    - Create a /backend/`.env`
-        - Add environmental variable `ATLAS_URI = <mongodb_connection>` from Mongodb Atlas Connect for Node.js
-    
-    
 ### Resources
 
 [Learn](https://medium.com/@summerxialinqiao/connect-flask-app-to-mongodb-atlas-using-pymongo-328e119a7bd8) how to Connect Flask App to MongoDB Atlas Using Pymongo
@@ -149,11 +90,6 @@ app.listen(port, () => {
 [Learn/Watch](https://www.youtube.com/watch?v=XL9cNMMJf7A) Working with Config Vars on Heroku
 
 - Installing packages using pip and virtual environments [read](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/)
-
-- [Learn/Watch](https://www.youtube.com/watch?v=7CqJlxBYj-M) Learn the `MERN` Stack - Full Tutorial (MongoDB, Express, React, Node.js)
-    - MEAN is a free and open-source JavaScript software stack for building dynamic web sites and web applications. It's a a Javascript Stack that is used for easier and faster deployment of full-stack web applications.
-
-- [Download](https://insomnia.rest/) Insomnia - Leading Open Source API Client, and Collaborative API Design Platform for GraphQL, and REST.
 
 ### Nice to Have
 
