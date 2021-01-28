@@ -49,6 +49,11 @@ git push -u origin main
 - [React Bootstrap](https://react-bootstrap.github.io/)
 - [React Router](https://reactrouter.com/web/guides/quick-start)
 - [axios](https://www.axios.com/)
+- Install MERN packages
+    - [express.js](https://expressjs.com/)
+    - [cors](https://github.com/expressjs/cors)
+    - [Mongoose ](https://mongoosejs.com/docs/)
+- [Nodemon](https://nodemon.io/)
 
 ### Project Setup
 
@@ -69,6 +74,8 @@ cd backend
 ```
 npm install express cors mongoose dotenv
 ```
+    - [express.js](https://expressjs.com/) is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
+    - [CORS](https://expressjs.com/en/resources/middleware/cors.html) is a node.js package for providing a Connect/Express middleware that can be used to enable CORS with various options. 
     - [Mongoose ](https://mongoosejs.com/docs/) elegant mongodb object modeling for node.js
 - Install [Nodemon](https://nodemon.io/) is a utility depended on by over 1.5 million projects, that will monitor for any changes in your source and automatically restart your server. Perfect for development.
 ```
@@ -115,6 +122,9 @@ app.listen(port, () => {
 
 - [Learn/Watch](https://www.youtube.com/watch?v=7CqJlxBYj-M) Learn the `MERN` Stack - Full Tutorial (MongoDB, Express, React, Node.js)
     - MEAN is a free and open-source JavaScript software stack for building dynamic web sites and web applications. It's a a Javascript Stack that is used for easier and faster deployment of full-stack web applications.
+
+- [Download](https://insomnia.rest/) Insomnia - Leading Open Source API Client, and Collaborative API Design Platform for GraphQL, and REST.
+
 
 ### Python and Flask for Windows
 
