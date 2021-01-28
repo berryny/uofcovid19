@@ -91,6 +91,8 @@ cd backend
 
 - Installing packages using pip and virtual environments [read](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/)
 
+- [Page Not Found Error on Netlify Reactjs React Router solved](https://dev.to/rajeshroyal/page-not-found-error-on-netlify-reactjs-react-router-solved-43oa)
+
 ### Nice to Have
 
 - Install [cool-ascii-faces](https://www.npmjs.com/package/cool-ascii-faces) get some cool ascii faces
