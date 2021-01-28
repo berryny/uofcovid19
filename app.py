@@ -1,4 +1,4 @@
-import db
+# import db
 from flask import Flask, request, jsonify
 import requests
 
@@ -22,10 +22,10 @@ def survey():
 
 # To get the application deployed add /api/ to differentiate betwen the front-end and back-end URL structure
 # the /api will act as a namespace to separate what are the front-end and back-end routes
-@app.route("/api/checkin", methods=['POST', 'GET'])
-def checkin():
-    data = request.form
-    db.db.user_collection.insert_one({"survey": data})
+# @app.route("/api/checkin", methods=['POST', 'GET'])
+# def checkin():
+#     data = request.form
+#     db.db.user_collection.insert_one({"survey": data})
     # db.db.user_collection.insert_one({"survey": "girl"})
 
 if __name__ == '__main__':
