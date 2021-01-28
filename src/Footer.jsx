@@ -5,8 +5,7 @@ import { Container, Row, Col } from "react-bootstrap"
 
 function Footer() {
   return (
-    <div>
-      <footer className="footer bg-light py-5 mt-5">
+    <div className="footer bg-light py-5 mt-5">
         <Container className="text-center">
           <Row className="align-items-center">
             <Col md={2}><img
@@ -25,7 +24,6 @@ function Footer() {
             </Col>
           </Row>
         </Container>
-      </footer>
     </div>
   )
 }

@@ -48,6 +48,8 @@ git push -u origin main
 
 - [React Bootstrap](https://react-bootstrap.github.io/)
 - [React Router](https://reactrouter.com/web/guides/quick-start)
+- [React Date Picker](https://www.npmjs.com/package/react-datepicker)
+    - `npm install react-datepicker --save`
 - [axios](https://www.axios.com/)
 - Install MERN packages
     - [express.js](https://expressjs.com/)

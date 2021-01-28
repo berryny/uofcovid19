@@ -15,34 +15,51 @@ import RegAccount from './RegAccount';
 import Survey from './Survey';
 import Profile from './Profile';
 
+// Example Sites
+import ExerciseList from './components/exercises-list.component';
+import EditExercise from './components/edit-exercise.component';
+import CreateExercise from './components/create-exercise.component';
+import CreateUser from './components/create-user.component';
+
+
 ReactDOM.render(
   <div>
     <Router>
-      <NavigationBar />
-      <Switch>
-      <Route exact path="/">
-          <Landing />
-        </Route>
-        <Route exact path="/about">
-          <About />
-        </Route>
-        <Route exact path="/login">
-          <Login />
-        </Route>
-        <Route exact path="/register">
-          <RegAccount />
-        </Route>
-        <Route exact path="/contact">
-          <Contact />
-        </Route>
-        <Route exact path="/survey">
-          <Survey />
-        </Route>
-        <Route exact path="/profile">
-          <Profile />
-        </Route>
-      </Switch>
+      <header>
+        <NavigationBar />
+      </header>
+      <main>
+        <Switch>
+          <Route exact path="/">
+            <Landing />
+          </Route>
+          <Route exact path="/about">
+            <About />
+          </Route>
+          <Route exact path="/login">
+            <Login />
+          </Route>
+          <Route exact path="/register">
+            <RegAccount />
+          </Route>
+          <Route exact path="/contact">
+            <Contact />
+          </Route>
+          <Route exact path="/survey">
+            <Survey />
+          </Route>
+          <Route exact path="/profile">
+            <Profile />
+          </Route>
+          <Route exact path="/exercise-tracker" component={ExerciseList} />
+          <Route exact path="/edit/:id" component={EditExercise} />
+          <Route exact path="/create" component={CreateExercise} />
+          <Route exact path="/user" component={CreateUser} />
+        </Switch>
+      </main>
+      <footer>
         <Footer />
+      </footer>
     </Router>
   </div>
   ,

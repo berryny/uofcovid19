@@ -8,8 +8,13 @@
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.13",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.3",
+    "react-datepicker": "^3.4.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
@@ -39,5 +44,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:5000/api/checkin"
+  "homepage": "."
 }
