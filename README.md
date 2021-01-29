@@ -91,7 +91,9 @@ cd backend
 
 - Installing packages using pip and virtual environments [read](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/)
 
-- [Page Not Found Error on Netlify Reactjs React Router solved](https://dev.to/rajeshroyal/page-not-found-error-on-netlify-reactjs-react-router-solved-43oa)
+- Page Not Found Error on Netlify Reactjs React Router solved 
+    - add a `_redirects` file in the public folder 
+        - add `/* /index.html 200` into the file
 
 ### Nice to Have
 
@@ -100,9 +102,7 @@ cd backend
 npm install cool-ascii-faces -g
 cool-face [-a | --all]
 ```
-    - [Resource](https://devcenter.heroku.com/articles/getting-started-with-nodejs#push-local-changes)
-
-
+ - [Resource](https://devcenter.heroku.com/articles/getting-started-with-nodejs#push-local-changes)
 
 ### Python and Flask for Windows
 
