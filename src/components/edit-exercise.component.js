@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
+import { Container } from "react-bootstrap"
 
 
 export default class EditExercise extends Component {
@@ -97,6 +98,7 @@ export default class EditExercise extends Component {
   render() {
     return (
       <div>
+        <Container>
         <h3>Edit Exercise Log</h3>
         <form onSubmit={this.onSubmit}>
           <div className="form-group">
@@ -148,6 +150,7 @@ export default class EditExercise extends Component {
             <input type="submit" value="Edit Exercise Log" className="btn btn-primary" />
           </div>
         </form>
+        </Container>
       </div>
     )
   }
