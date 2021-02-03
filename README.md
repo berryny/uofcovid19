@@ -4,6 +4,9 @@
 [![npm version](https://img.shields.io/npm/v/feeder-react-feedback.svg)](https://www.npmjs.com/package/feeder-react-feedback)
 [![npm](https://img.shields.io/npm/dm/feeder-react-feedback.svg)](https://www.npmjs.com/package/feeder-react-feedback)
 
+[![GitHub forks](https://img.shields.io/github/forks/berryny/uofcovid19)](https://github.com/berryny/uofcovid19/network)
+
+[![GitHub issues](https://img.shields.io/github/issues/berryny/uofcovid19)](https://github.com/berryny/uofcovid19/issues)
 
 ## Project
 
