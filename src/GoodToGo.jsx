@@ -2,7 +2,7 @@ import React from "react"
 
 import stayingsafe from './views/img/keeping-each-other-safe.jpg';
 
-import { Container, Row, Col, Card } from "react-bootstrap"
+import { Container, Button, Row, Col, Card } from "react-bootstrap"
 
 function GoodToGo() {
     return (
@@ -26,7 +26,7 @@ function GoodToGo() {
                   <Button variant="danger" href="/login">Upload Picture</Button>  
                 </Col>
               </Row>
-            </Container>cd 
+            </Container>
           </Container>
 
         </div >
