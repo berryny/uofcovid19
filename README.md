@@ -2,10 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9e00bc23-3e00-4fde-89b4-90a4f80f6f8f/deploy-status)](https://app.netlify.com/sites/uofcc/deploys)
 [![npm version](https://img.shields.io/npm/v/feeder-react-feedback.svg)](https://www.npmjs.com/package/feeder-react-feedback)
-[![npm](https://img.shields.io/npm/dm/feeder-react-feedback.svg)](https://www.npmjs.com/package/feeder-react-feedback)
-
 [![GitHub forks](https://img.shields.io/github/forks/berryny/uofcovid19)](https://github.com/berryny/uofcovid19/network)
-
 [![GitHub issues](https://img.shields.io/github/issues/berryny/uofcovid19)](https://github.com/berryny/uofcovid19/issues)
 
 ## Project
