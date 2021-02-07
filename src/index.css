@@ -57,6 +57,29 @@ a.btn-danger, a.btn-danger:link, a.btn-danger:visited, a.btn-danger:hover {
   font-size: 1em;
 }
 
+/* Create a round checkbox */
+.checkbox-round {
+  width: 1.3em;
+  height: 1.3em;
+  background-color: white;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.checkbox-round:checked {
+  background-color: var(--dark);
+  border: 3px solid #ddd;
+}
+
+.checkbox-label{
+  margin-left: 10px;
+  padding-top: 0.2rem;
+}
+
 /* Responsive Style */
 @media only screen and (max-width: 600px) {
   .callout-jumbotron {
