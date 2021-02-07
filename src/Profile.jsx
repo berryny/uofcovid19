@@ -2,7 +2,7 @@ import React from "react"
 
 import frontprofilepic from './views/img/front-profile-pic.png';
 
-import { Container, Button, Row, Col, Card, ListGroup } from "react-bootstrap"
+import { Container, Row, Col, Card } from "react-bootstrap"
 
 function Profile() {
   return (
