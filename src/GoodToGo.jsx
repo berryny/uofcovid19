@@ -1,12 +1,8 @@
 import React from "react"
 
-import goodcommunity from './views/img/good-community.jpg';
-import appleStore from './views/img/appleStore.png';
-import googlePlay from './views/img/googlePlay.png';
-import img1 from './views/img/good-community-2.jpg';
 import stayingsafe from './views/img/keeping-each-other-safe.jpg';
 
-import { Container, Button, Row, Col, Card, ListGroup } from "react-bootstrap"
+import { Container, Button, Row, Col, Card } from "react-bootstrap"
 
 function GoodToGo() {
     return (
@@ -30,10 +26,11 @@ function GoodToGo() {
                   <Button variant="danger" href="/login">Upload Picture</Button>  
                 </Col>
               </Row>
-            </Container>cd 
+            </Container>
           </Container>
 
         </div >
   )
 }
 export default GoodToGo;
+
